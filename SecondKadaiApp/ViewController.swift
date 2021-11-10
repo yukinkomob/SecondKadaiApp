@@ -8,12 +8,24 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var nameTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let resultViewController:ResultViewController = segue.destination as! ResultViewController
+        if (nameTextField.text != nil) {
+            resultViewController.name = nameTextField.text!
+        } else {
+            resultViewController.name = "名無し"
+        }
+    }
 
-
+    @IBAction func unwind(_ segue: UIStoryboardSegue) {
+        
+    }
 }
 
