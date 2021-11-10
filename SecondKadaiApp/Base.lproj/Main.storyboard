@@ -32,8 +32,8 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jam-6F-g6j">
-                                <rect key="frame" x="184" y="399" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="176" y="399" width="62" height="30"/>
+                                <state key="normal" title="挨拶する"/>
                                 <connections>
                                     <segue destination="0MU-ry-DSi" kind="show" id="JEx-Se-CUw"/>
                                 </connections>

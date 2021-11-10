@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let resultViewController:ResultViewController = segue.destination as! ResultViewController
-        if (nameTextField.text != nil) {
+        if (nameTextField.text != nil && nameTextField.text != "") {
             resultViewController.name = nameTextField.text!
         } else {
             resultViewController.name = "名無し"
